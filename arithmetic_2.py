@@ -4,7 +4,7 @@ def add(num_list):
     """Return the sum of two numbers incl list"""
     sum = 0
     for item in num_list:
-        sum = sum + item
+        sum = sum + int(item)
     return sum
 
 # def add(num1, num2):
@@ -15,10 +15,10 @@ def subtract(num_list):
     """Return the difference of two numbers"""
     answer = 0
     for item in num_list:
-        answer = answer - item
+        answer = answer - int(item)
     return answer    
 
-def multiply(num1, num2):
+def multiply(num_list):
     """Return the product of two numbers"""
     return num1 * num2
 

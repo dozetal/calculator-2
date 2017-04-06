@@ -7,7 +7,7 @@ Calculator Part 1.
 from arithmetic_2 import *
 
 
-def evaluate_input(operand, parameter_1, parameter_2 = 0):
+def evaluate_input(operand, nums):
 
     """ 
     Step 1 of REPL
@@ -15,28 +15,28 @@ def evaluate_input(operand, parameter_1, parameter_2 = 0):
     """
 
     if operand == "+":
-        return add(parameter_1, parameter_2)
+        return add(nums)
 
     elif operand == "-":
-        return subtract(parameter_1, parameter_2)
+        return subtract(nums)
 
     elif operand == "*":
-        return multiply(parameter_1, parameter_2)
+        return multiply(nums)
 
     elif operand == "/":
-        return divide(parameter_1, parameter_2)
+        return divide(nums)
 
-    elif operand == "square":
-        return square(parameter_1)
+    # elif operand == "square":
+    #     return square(parameter_1)
 
-    elif operand == "cube":
-        return cube(parameter_1)
+    # elif operand == "cube":
+    #     return cube(parameter_1)
 
-    elif operand == "pow":
-        return power(parameter_1, parameter_2)
+    # elif operand == "pow":
+    #     return power(parameter_1, parameter_2)
 
-    elif operand == "mod":
-        return mod(parameter_1, parameter_2)
+    # elif operand == "mod":
+    #     return mod(parameter_1, parameter_2)
 
 # The While Loop runs the Calculator until told to Exit
 
